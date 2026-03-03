@@ -79,42 +79,57 @@ const fareTables = {
 };
 
 export function calculateTotalFare(pathIds, transitGraph) {
-  // If the path is empty or broken, cost is 0
   if (!pathIds || pathIds.length === 0) return 0;
 
-  let netCost = 0; // The tracker you suggested!
-
-  // Start the first segment with the first station in the path
+  let netCost = 0;
   let currentSegment = [pathIds[0]];
   let currentOperator = transitGraph[pathIds[0]].line.operator;
 
-  // Loop through the rest of the path starting at the second station (index 1)
+  // We will create a helper function right inside here to count "billable" hops
+  function getBillableHops(segmentArray) {
+    let hops = 0;
+    // Loop through the segment to check the connections between each step
+    for (let j = 0; j < segmentArray.length - 1; j++) {
+      let thisNode = transitGraph[segmentArray[j]];
+      let nextNodeId = segmentArray[j + 1];
+
+      // Find the specific connection data between these two nodes
+      let connection = thisNode.connections.find(
+        (c) => c.station.id === nextNodeId,
+      );
+
+      // If it is a transfer AND it's the same operator (like Siam to Siam), it's free!
+      // Otherwise, add 1 to the hop count.
+      if (connection && connection.isTransfer && !connection.isCrossOp) {
+        // Do nothing! It's a free walk.
+      } else {
+        hops++;
+      }
+    }
+    return hops;
+  }
+
   for (let i = 1; i < pathIds.length; i++) {
     let stationId = pathIds[i];
     let operator = transitGraph[stationId].line.operator;
 
-    // RULE 1: If the operator is the same, keep adding to the current segment
     if (operator === currentOperator) {
       currentSegment.push(stationId);
-    }
-    // RULE 2: If the operator changes, break the segment and calculate!
-    else {
-      let hops = currentSegment.length - 1; // Your length logic!
+    } else {
+      // USE OUR NEW SMART COUNTER HERE:
+      let hops = getBillableHops(currentSegment);
 
-      // Look up the price in the table and add it to netCost
       netCost +=
         fareTables[currentOperator][hops] ||
         fareTables[currentOperator][fareTables[currentOperator].length - 1];
-      // (The || part just ensures if the hops exceed the array length, it charges the max fare)
 
-      // Start a brand new segment for the new operator
       currentSegment = [stationId];
       currentOperator = operator;
     }
   }
 
-  // RULE 3: Don't forget to calculate the final segment after the loop finishes!
-  let finalHops = currentSegment.length - 1;
+  // AND USE IT FOR THE FINAL SEGMENT HERE:
+  let finalHops = getBillableHops(currentSegment);
   netCost +=
     fareTables[currentOperator][finalHops] ||
     fareTables[currentOperator][fareTables[currentOperator].length - 1];

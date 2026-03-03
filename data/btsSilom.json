@@ -1,0 +1,82 @@
+[
+  {
+    "id": "W1",
+    "thName": "สนามกีฬาแห่งชาติ",
+    "enName": "National Stadium",
+    "line": "btsSilom",
+    "connections": [{ "target": "CEN_Silom", "time": 1 }]
+  },
+  {
+    "id": "CEN_Silom",
+    "thName": "สยาม",
+    "enName": "Siam",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "W1", "time": 1 },
+      { "target": "S1", "time": 3 },
+      {
+        "target": "CEN_Sukhumvit",
+        "time": 1,
+        "isTransfer": true,
+        "isCrossOp": false
+      }
+    ]
+  },
+  {
+    "id": "S1",
+    "thName": "ราชดำริ",
+    "enName": "Ratchadamri",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "CEN_Silom", "time": 3 },
+      { "target": "S2", "time": 3 }
+    ]
+  },
+  {
+    "id": "S2",
+    "thName": "ศาลาแดง",
+    "enName": "Sala Daeng",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "S1", "time": 3 },
+      { "target": "S3", "time": 2 }
+    ]
+  },
+  {
+    "id": "S3",
+    "thName": "ช่องนนทรี",
+    "enName": "Chong Nonsi",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "S2", "time": 2 },
+      { "target": "S4", "time": 2 }
+    ]
+  },
+  {
+    "id": "S4",
+    "thName": "เซนต์หลุยส์",
+    "enName": "Saint Louis",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "S3", "time": 2 },
+      { "target": "S5", "time": 1 }
+    ]
+  },
+  {
+    "id": "S5",
+    "thName": "สุรศักดิ์",
+    "enName": "Surasak",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "S4", "time": 1 },
+      { "target": "S6", "time": 2 }
+    ]
+  },
+  {
+    "id": "S6",
+    "thName": "สะพานตากสิน",
+    "enName": "Saphan Taksin",
+    "line": "btsSilom",
+    "connections": [{ "target": "S5", "time": 2 }]
+  }
+]

@@ -1,17 +1,45 @@
 import fs from "fs";
 import { Line, Station } from "./models.js";
 
-// JSON -> JavaScript array
-const rawData = fs.readFileSync(
+// 1. Read and parse each file individually
+const mainRaw = fs.readFileSync(
   new URL("../data/stations.json", import.meta.url),
 );
-const stationsData = JSON.parse(rawData);
+const mainData = JSON.parse(mainRaw);
+
+const sukhumvitRaw = fs.readFileSync(
+  new URL("../data/btsSukhumvit.json", import.meta.url),
+);
+const sukhumvitData = JSON.parse(sukhumvitRaw);
+
+const silomRaw = fs.readFileSync(
+  new URL("../data/btsSilom.json", import.meta.url),
+);
+const silomData = JSON.parse(silomRaw);
+
+const arlRaw = fs.readFileSync(new URL("../data/arl.json", import.meta.url));
+const arlData = JSON.parse(arlRaw);
+
+const mrtBlueRaw = fs.readFileSync(
+  new URL("../data/mrtBlue.json", import.meta.url),
+);
+const mrtBlueData = JSON.parse(mrtBlueRaw);
+
+// 2. YOUR BRILLIANT SPREAD OPERATOR LOGIC!
+const stationsData = [
+  ...mainData,
+  ...sukhumvitData,
+  ...silomData,
+  ...mrtBlueData,
+  ...arlData,
+];
 
 export const transitGraph = {};
 
-// Create the Lines
 const lines = {
   btsSukhumvit: new Line("Sukhumvit", "Light Green", "#009E60", "BTS"),
+  btsSilom: new Line("Silom", "Dark Green", "#005E41", "BTS"),
+  arl: new Line("Airport Rail Link", "ARL", "#441903", "Era One"),
   mrtBlue: new Line("Blue", "Blue", "#0000FF", "BEM"),
 };
 
@@ -32,6 +60,12 @@ for (let data of stationsData) {
 
   for (let conn of data.connections) {
     let targetStation = transitGraph[conn.target];
+
+    if (targetStation === undefined) {
+      console.log(
+        `🚨 RED ALERT! Station ${data.id} is trying to connect to a ghost target: "${conn.target}"`,
+      );
+    }
 
     currentStation.connects(
       targetStation,
