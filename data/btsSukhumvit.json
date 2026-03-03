@@ -1,0 +1,203 @@
+[  
+  {
+    "id": "CEN_Sukhumvit",
+    "thName": "สยาม",
+    "enName": "Siam",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N1", "time": 2 },
+      { "target": "E1", "time": 2 },
+      {
+        "target": "CEN_Silom","time": 1,
+        "isTransfer": true,
+        "isCrossOp": false
+      }
+    ]
+  },
+  {
+    "id": "N1",
+    "thName": "ราชเทวี",
+    "enName": "Ratchathewi",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "CEN_Sukhumvit", "time": 2 },
+      { "target": "N2", "time": 2 }
+    ]
+  },
+  {
+    "id": "N2",
+    "thName": "พญาไท",
+    "enName": "Phaya Thai",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N1", "time": 2 },
+      { "target": "N3", "time": 2 },
+      { 
+      "target": "A8", "time": 2,
+      "isTransfer": true,
+      "isCrossOp": true 
+      }
+    ]
+  },
+  {
+    "id" : "N3",
+    "thName" : "อนุสาวรีย์ชัยสมรภูมิ",
+    "enName" : "Victory Monument",
+    "line" : "btsSukhumvit",
+    "connections": [
+      {"target": "N2","time": 2},
+      {"target": "N4","time": 3}
+    ]
+  },
+  {
+    "id" : "N4",
+    "thName" : "สนามเป้า",
+    "enName" : "Sanam Pao",
+    "line" : "btsSukhumvit",
+    "connections": [
+      {"target": "N3","time": 3},
+      {"target": "N5","time": 1}
+    ]
+  },
+  {
+    "id" : "N5",
+    "thName" : "อารีย์",
+    "enName" : "Ari",
+    "line" : "btsSukhumvit",
+    "connections": [
+      {"target": "N4","time": 1},
+      {"target": "N6","time": 2}
+    ]
+  },
+  {
+    "id" : "N6",
+    "thName" : "เสนาร่วม",
+    "enName" : "Sena Ruam",
+    "line" : "btsSukhumvit",
+    "connections": [
+      {"target": "N5","time": 2},
+      {"target": "N7","time": 1}
+    ]
+  },
+  {
+    "id" : "N7",
+    "thName" : "สะพานควาย",
+    "enName" : "Saphan Khwai",
+    "line" : "btsSukhumvit",
+    "connections": [
+      {"target": "N6","time": 1},
+      {"target": "N8","time": 1}
+    ]
+  },
+  {
+    "id" : "N8",
+    "thName" : "หมอชิต",
+    "enName" : "Mo Chit",
+    "line" : "btsSukhumvit",
+    "connections": [
+      {"target": "N7","time": 1},
+      {"target": "N9","time": 4},
+      {
+        "target": "BL13","time": 2,
+        "isTranfer": true,
+        "isCrossOp": true
+      }
+    ]
+  },
+  {
+    "id": "E1",
+    "thName": "ชิดลม",
+    "enName": "Chit Lom",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "CEN_Sukhumvit", "time": 2 },
+      { "target": "E2", "time": 2 }
+    ]
+  },
+  {
+    "id": "E2",
+    "thName": "เพลินจิต",
+    "enName": "Phloen Chit",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E1", "time": 2 },
+      { "target": "E3", "time": 2 }
+  ]
+  },
+  {
+    "id": "E3",
+    "thName": "นานา",
+    "enName": "Nana",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E2", "time": 2 },
+      { "target": "E4", "time": 2 }
+    ]
+  },
+  {
+    "id": "E4",
+    "thName": "อโศก",
+    "enName": "Asok",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E3", "time": 2 },
+      { "target": "E5", "time": 2 },
+      { 
+        "target": "BL22", "time": 4,
+        "isTransfer": true,
+        "isCrossOp": true 
+      }
+    ]
+  },
+  {
+    "id": "E5",
+    "thName": "พร้อมพงษ์",
+    "enName": "Phrom Phong",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E4", "time": 2 },
+      { "target": "E6", "time": 2 }
+  ]
+  },
+  {
+    "id": "E6",
+    "thName": "ทองหล่อ",
+    "enName": "Thong Lo",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E7", "time": 2 },
+      { "target": "E8", "time": 2 }
+
+  ]
+  },
+  {
+    "id": "E7",
+    "thName": "เอกมัย",
+    "enName": "Ekkamai",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E6", "time": 2 },
+      { "target": "E8", "time": 2 }
+    ]
+  },
+  {
+    "id": "E8",
+    "thName": "พระโขนง",
+    "enName": "Phra Khanong",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E7", "time": 2 },
+      { "target": "E9", "time": 2 }
+    ]
+  },
+  {
+    "id": "E9",
+    "thName": "อ่อนนุช",
+    "enName": "On Nut",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E8", "time": 2 },
+      { "target": "E10", "time": 2 }
+    ]
+  }
+]

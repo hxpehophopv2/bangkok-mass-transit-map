@@ -1,0 +1,93 @@
+[ 
+  {
+    "id": "A1",
+    "thName": "สุวรรณภูมิ",
+    "enName": "Suvanabhumi",
+    "line": "arl",
+    "connections": [{ "target": "A2", "time": 5 }]
+  },
+  {
+    "id": "A2",
+    "thName": "ลาดกระบัง",
+    "enName": "Lat Krabang",
+    "line": "arl",
+    "connections": [
+      { "target": "A1", "time": 5 },
+      { "target": "A3", "time": 5 }
+    ]
+  },
+  {
+    "id": "A3",
+    "thName": "บ้านทับช้่าง",
+    "enName": "Ban Thap Chang",
+    "line": "arl",
+    "connections": [
+      { "target": "A2", "time": 5 },
+      { "target": "A4", "time": 4 }
+    ]
+  },
+  {
+    "id": "A4",
+    "thName": "หัวหมาก",
+    "enName": "Hua Mak",
+    "line": "arl",
+    "connections": [
+      { "target": "A3", "time": 4 },
+      { "target": "A5", "time": 4 },
+      { 
+        "target": "YL11", "time": 3,
+        "isTransfer":true,
+        "isCrossOp": true
+      }
+    ]
+  },
+  {
+    "id": "A5",
+    "thName": "รามคำแหง",
+    "enName": "Ramkhamhaeng",
+    "line": "arl",
+    "connections": [
+      { "target": "A4", "time": 4 },
+      { "target": "A6", "time": 4 }
+    ]
+  },
+  {
+    "id": "A6",
+    "thName": "มักกะสัน",
+    "enName": "Makkasan",
+    "line": "arl",
+    "connections": [
+      { "target": "A5", "time": 4 },
+      { "target": "A7", "time": 3 },
+      { 
+        "target": "BL21", "time": 3,
+        "isTransfer":true,
+        "isCrossOp":true
+      }
+    ]
+  },
+  {
+    "id": "A7",
+    "thName": "ราชปรารภ",
+    "enName": "Ratchaprarop",
+    "line": "arl",
+    "connections": [
+      { "target": "A6", "time": 3 },
+      { "target": "A8", "time": 1 }
+    ]
+  },
+  {
+    "id": "A8",
+    "thName": "พญาไท",
+    "enName": "Phaya Thai",
+    "line": "arl",
+    "connections": [
+      { "target": "A7", "time": 1 },
+      { 
+        "target": "N2", "time": 2 ,
+        "isTransfer":true,
+        "isCrossOp":true
+      }
+    ]
+  }
+]
