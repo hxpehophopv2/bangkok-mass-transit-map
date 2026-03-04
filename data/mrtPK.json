@@ -1,0 +1,319 @@
+[
+  {
+    "id": "PK01",
+    "thName": "ศูนย์ราชการนนทบุรี",
+    "enName": "Nonthaburi Civic Center",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK02", "time": 2 },
+      { "target": "PP11", "time": 4 , "isTransfer": true, "isCrossOp": true}
+    ]
+  },
+  {
+    "id": "PK02",
+    "thName": "แคราย",
+    "enName": "Khae Rai",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK01", "time": 2 },
+      { "target": "PK03", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK03",
+    "thName": "สนามบินน้ำ",
+    "enName": "Sanambin Nam",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK02", "time": 2 },
+      { "target": "PP04", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK04",
+    "thName": "สามัคคี",
+    "enName": "Samakkhi",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK03", "time": 2 },
+      { "target": "PK05", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK05",
+    "thName": "กรมชลประทาน",
+    "enName": "Royal Irrigation Departmant",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK04", "time": 2 },
+      { "target": "PK06", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK06",
+    "thName": "แยกปากเกร็ด ",
+    "enName":  "Yaek Pak Kret",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK05", "time": 2 },
+      { "target": "PK07", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK07",
+    "thName": "เลี่ยงเมืองปากเกร็ด",
+    "enName": "Pak Kret Bypass",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK06", "time": 2 },
+      { "target": "PK08", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK08",
+    "thName": "แจ้งวัฒนะ-ปากเกร็ด 28",
+    "enName": "Chaeng Watthana-Pak Kret 28",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK07", "time": 2 },
+      { "target": "PK09", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK09",
+    "thName": "ศรีรัช",
+    "enName": "Si Rat",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK08", "time": 2 },
+      { "target": "PK10", "time": 3 }
+    ]
+  },
+  {
+    "id": "PK10_L",
+    "thName": "เมืองทองธานี",
+    "enName": "Muang Thong Thani",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK09", "time": 3 },
+      { "target": "PK11", "time": 2 },
+      { "target": "MT01", "time": 4 , "isTransfer": true , "isCrossOp":true }
+    ]
+  },
+  {
+    "id": "PK11",
+    "thName": "แจ้งวัฒนะ 14",
+    "enName": "Chaeg Watthana 14",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK10", "time": 2 },
+      { "target": "PK12", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK12",
+    "thName": "ศูนย์ราชการเฉลิมพระเกียรติ",
+    "enName": "Government Complex",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK11", "time": 2 },
+      { "target": "PK13", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK13",
+    "thName": "โทรคมนาคมแห่งชาติ",
+    "enName": "National Telecom",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK12", "time": 2 },
+      { "target": "PK14", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK14",
+    "thName": "หลักสี่",
+    "enName": "Lak Si",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK13", "time": 2 },
+      { "target": "PK15", "time": 1 },
+      { "target": "RN06", "time": 2 , "isTransfer": true , "isCrossOp": true}
+    ]
+  },
+  {
+    "id": "PK15",
+    "thName": "ราชภัฏพระนคร",
+    "enName": "Rajabhat Phranakhon",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK14", "time": 1 },
+      { "target": "PK16", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK16",
+    "thName": "วัดพระศรีมหาธาตุ",
+    "enName": "Wat Phra Sri Mahathat",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK15", "time": 2 },
+      { "target": "PK17", "time": 2 },
+      { "target": "N17", "time": 4 , "isTransfer":true , "isCrossOp":true}
+    ]
+  },
+  {
+    "id": "PK17",
+    "thName": "รามอินทรา 3",
+    "enName": "Ram Inthra 3",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK16", "time": 2 },
+      { "target": "PK18", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK18",
+    "thName": "ลาดปลาเค้า",
+    "enName": "Lat Pla Khao",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK17", "time": 2 },
+      { "target": "PK19", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK19",
+    "thName": "รามอินทรา กม.4",
+    "enName": "Ram Inthra Kor Mor 4",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK18", "time": 2 },
+      { "target": "PK20", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK20",
+    "thName": "มัยลาภ",
+    "enName": "Maiyalap",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK19", "time": 2 },
+      { "target": "PK21", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK21",
+    "thName": "วัชรพล",
+    "enName": "Vacharaphol",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK20", "time": 2 },
+      { "target": "PK22", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK22",
+    "thName": "รามอินทรา กม.6",
+    "enName": "Ram Inthra Kor Mor 6",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK21", "time": 2 },
+      { "target": "PK23", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK23",
+    "thName": "คู้บอน",
+    "enName": "Khu Bon",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK22", "time": 2 },
+      { "target": "PK24", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK24",
+    "thName": "รามอินทรา กม.9",
+    "enName": "Ram Inthra Kor Mor 9",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK23", "time": 2 },
+      { "target": "PK25", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK25",
+    "thName": "วงแหวนรามอินทรา",
+    "enName": "Outer Ring Road-Ram Inthra",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK24", "time": 2 },
+      { "target": "PK26", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK26",
+    "thName": "นพรัตน์",
+    "enName": "Nopparat",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK25", "time": 2 },
+      { "target": "PK27", "time": 3 }
+    ]
+  },
+  {
+    "id": "PK27",
+    "thName": "บางชัน",
+    "enName": "Bang Chan",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK26", "time": 3 },
+      { "target": "PK28", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK28",
+    "thName": "เศรษฐบุตรบำเพ็ญ",
+    "enName": "Setthabutbamphen",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK27", "time": 2 },
+      { "target": "PK29", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK29",
+    "thName": "ตลาดมีนบุรี",
+    "enName": "Min Buri Market",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "PK28", "time": 2 },
+      { "target": "PK30", "time": 2 }
+    ]
+  },
+  {
+    "id": "PK30",
+    "thName": "มีนบุรี",
+    "enName": "Min Buri",
+    "line": "mrtPK",
+    "connection" : [{ "target": "PK29", "time": 2 }]
+  },
+  {
+    "id": "MT01",
+    "thName": "อิมแพ็ค เมืองทองธานี",
+    "enName": "Impact Muang Thong Thani",
+    "line": "mrtPK",
+    "connection" : [
+      { "target": "MT02", "time": 2},
+      { "target": "PK10_U", "time": 4 , "isTransfer":true , "isCrossOp":true}
+    ]
+  },
+  {
+    "id": "MT02",
+    "thName": "ทะเลสาบเมืองทองธานี",
+    "enName": "Lake Muang Thong Thani",
+    "line": "mrtPK",
+    "connection" : [{ "target": "MT01", "time": 2 }]
+  }
+]

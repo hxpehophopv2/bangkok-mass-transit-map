@@ -2,7 +2,7 @@
   {
     "id": "A1",
     "thName": "สุวรรณภูมิ",
-    "enName": "Suvanabhumi",
+    "enName": "Suvarnabhumi",
     "line": "arl",
     "connections": [{ "target": "A2", "time": 5 }]
   },

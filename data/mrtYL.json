@@ -1,0 +1,233 @@
+[
+  {
+    "id": "YL01",
+    "thName": "ลาดพร้าว",
+    "enName": "Lat Phrao",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL02", "time": 2},
+      { "target": "BL15", "time": 4 , "isTransfer":true , "isCrossOp":true}
+    ]
+  },
+  {
+    "id": "YL02",
+    "thName": "ภาวนา",
+    "enName": "Phawana",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL01", "time": 2},
+      { "target": "YL03", "time": 2}
+    ]
+  },
+  {
+    "id": "YL03",
+    "thName": "โชคชัย 4",
+    "enName": "Chok Chai 4",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL02", "time": 2},
+      { "target": "YL04", "time": 2}
+    ]
+  },
+  {
+    "id": "YL04",
+    "thName": "ลาดพร้าว 71",
+    "enName": "Lat Phrao 71",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL03", "time": 2},
+      { "target": "YL05", "time": 2}
+    ]
+  },
+  {
+    "id": "YL05",
+    "thName": "ลาดพร้าว 83",
+    "enName": "Lat Phrao 83",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL04", "time": 2},
+      { "target": "YL06", "time": 2}
+    ]
+  },
+  {
+    "id": "YL06",
+    "thName": "มหาดไทย",
+    "enName": "Mahat Thai",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL05", "time": 2},
+      { "target": "YL07", "time": 1}
+    ]
+  },
+  {
+    "id": "YL07",
+    "thName": "ลาดพร้าว 101",
+    "enName": "Lat Phrao 101",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL06", "time": 1},
+      { "target": "YL08", "time": 2}
+    ]
+  },
+  {
+    "id": "YL08",
+    "thName": "บางกะปิ",
+    "enName": "Bang Kapi",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL07", "time": 2},
+      { "target": "YL09", "time": 3}
+    ]
+  },
+  {
+    "id": "YL09",
+    "thName": "แยกลำสาลี",
+    "enName": "Yaek Lam Sali",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL08", "time": 3},
+      { "target": "YL10", "time": 2}
+    ]
+  },
+  {
+    "id": "YL10",
+    "thName": "ศรีกรีฑา",
+    "enName": "Si Kritha",
+    "line": "",
+    "connection": [
+      { "target": "YL09", "time": 2},
+      { "target": "YL11", "time": 3}
+    ]
+  },
+  {
+    "id": "YL11",
+    "thName": "หัวหมาก",
+    "enName": "Hua Mak",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL10", "time": 3},
+      { "target": "YL12", "time": 2},
+      { "target": "A4", "time": 4 , "isTransfer":true , "isCrossOp":true}
+    ]
+  },
+  {
+    "id": "YL12",
+    "thName": "กลันตัน",
+    "enName": "Kalantan",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL11", "time": 2},
+      { "target": "YL13", "time": 2}
+    ]
+  },
+  {
+    "id": "YL13",
+    "thName": "ศรีนุช",
+    "enName": "Si Nut",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL12", "time": 2},
+      { "target": "YL14", "time": 2}
+    ]
+  },
+  {
+    "id": "YL14",
+    "thName": "ศรีนครินทร์ 38",
+    "enName": "Srinagarindra 38",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL13", "time": 2},
+      { "target": "YL15", "time": 2}
+    ]
+  },
+  {
+    "id": "YL15",
+    "thName": "สนามหลวง ร.9",
+    "enName": "Suan Luang Rama IX",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL14", "time": 2},
+      { "target": "YL16", "time": 2}
+    ]
+  },
+  {
+    "id": "YL16",
+    "thName": "ศรีอุดม",
+    "enName": "Si Udom",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL15", "time": 2},
+      { "target": "YL17", "time": 2}
+    ]
+  },
+  {
+    "id": "YL17",
+    "thName": "ศรีเอี่ยม",
+    "enName": "Si lam",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL16", "time": 2},
+      { "target": "YL18", "time": 2}
+    ]
+  },
+  {
+    "id": "YL18",
+    "thName": "ศรีลาซาล",
+    "enName": "Si La Salle",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL17", "time": 2},
+      { "target": "YL19", "time": 2}
+    ]
+  },
+  {
+    "id": "YL19",
+    "thName": "ศรีแบริ่ง",
+    "enName": "Si Bearing",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL18", "time": 2},
+      { "target": "YL20", "time": 2}
+    ]
+  },
+  {
+    "id": "YL20",
+    "thName": "ศรีด่าน",
+    "enName": "Si Dan",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL19", "time": 2},
+      { "target": "YL21", "time": 2}
+    ]
+  },
+  {
+    "id": "YL21",
+    "thName": "ศรีเทพา",
+    "enName": "Si Thepha",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL20", "time": 2},
+      { "target": "YL22", "time": 2}
+    ]
+  },
+  {
+    "id": "YL22",
+    "thName": "ทิพวัล",
+    "enName": "Thipphawan",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL21", "time": 2},
+      { "target": "YL23", "time": 2}
+    ]
+  },
+  {
+    "id": "YL23",
+    "thName": "สำโรง",
+    "enName": "Samrong",
+    "line": "mrtYL",
+    "connection": [
+      { "target": "YL22", "time": 2},
+      { "target": "E15", "time": 4 , "isTransfer":true , "isCrossOp":true}
+    ]
+  }
+]
