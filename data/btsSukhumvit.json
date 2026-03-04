@@ -1,0 +1,496 @@
+[
+  {
+    "id": "CEN_Sukhumvit",
+    "thName": "สยาม",
+    "enName": "Siam",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N1", "time": 2 },
+      { "target": "E1", "time": 2 },
+      {
+        "target": "CEN_Silom",
+        "time": 1,
+        "isTransfer": true,
+        "isCrossOp": false
+      }
+    ]
+  },
+  {
+    "id": "N1",
+    "thName": "ราชเทวี",
+    "enName": "Ratchathewi",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "CEN_Sukhumvit", "time": 2 },
+      { "target": "N2", "time": 2 }
+    ]
+  },
+  {
+    "id": "N2",
+    "thName": "พญาไท",
+    "enName": "Phaya Thai",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N1", "time": 2 },
+      { "target": "N3", "time": 2 },
+      {
+        "target": "A8",
+        "time": 2,
+        "isTransfer": true,
+        "isCrossOp": true
+      }
+    ]
+  },
+  {
+    "id": "N3",
+    "thName": "อนุสาวรีย์ชัยสมรภูมิ",
+    "enName": "Victory Monument",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N2", "time": 2 },
+      { "target": "N4", "time": 3 }
+    ]
+  },
+  {
+    "id": "N4",
+    "thName": "สนามเป้า",
+    "enName": "Sanam Pao",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N3", "time": 3 },
+      { "target": "N5", "time": 1 }
+    ]
+  },
+  {
+    "id": "N5",
+    "thName": "อารีย์",
+    "enName": "Ari",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N4", "time": 1 },
+      { "target": "N6", "time": 2 }
+    ]
+  },
+  {
+    "id": "N6",
+    "thName": "เสนาร่วม",
+    "enName": "Sena Ruam",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N5", "time": 2 },
+      { "target": "N7", "time": 1 }
+    ]
+  },
+  {
+    "id": "N7",
+    "thName": "สะพานควาย",
+    "enName": "Saphan Khwai",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N6", "time": 1 },
+      { "target": "N8", "time": 1 }
+    ]
+  },
+  {
+    "id": "N8",
+    "thName": "หมอชิต",
+    "enName": "Mo Chit",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "N7", "time": 1 },
+      { "target": "N9", "time": 4 },
+      { "target": "BL13", "time": 3, "isTransfer": true, "isCrossOp": true }
+    ]
+  },
+  {
+    "id": "N9",
+    "thName": "ห้าแยกลาดพร้าว",
+    "enName": "Ha Yaek Lat Phrao",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N8", "time": 4 },
+      { "target": "N10", "time": 2 },
+      { "target": "BL14", "time": 5, "isTransfer": true, "isCrossOp": true }
+    ]
+  },
+  {
+    "id": "N10",
+    "thName": "พหลโยธิน 24",
+    "enName": "Phahon Yothin 24",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N9", "time": 2 },
+      { "target": "N11", "time": 1 }
+    ]
+  },
+  {
+    "id": "N11",
+    "thName": "รัชโยธิน",
+    "enName": "Ratchayothin",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N10", "time": 1 },
+      { "target": "N12", "time": 2 }
+    ]
+  },
+  {
+    "id": "N12",
+    "thName": "เสนานิคม",
+    "enName": "Sena Nikhom",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N11", "time": 2 },
+      { "target": "N13", "time": 1 }
+    ]
+  },
+  {
+    "id": "N13",
+    "thName": "มหาวิทยาลัยเกษตรศาสตร์",
+    "enName": "Kasetsart University",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N12", "time": 1 },
+      { "target": "N14", "time": 2 }
+    ]
+  },
+  {
+    "id": "N14",
+    "thName": "กรมป่าไม้",
+    "enName": "Royal Forest Department",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N13", "time": 2 },
+      { "target": "N15", "time": 1 }
+    ]
+  },
+  {
+    "id": "N15",
+    "thName": "บางบัว",
+    "enName": "Bang Bua",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N14", "time": 1 },
+      { "target": "N16", "time": 2 }
+    ]
+  },
+  {
+    "id": "N16",
+    "thName": "กรมทหารราบที่ 11",
+    "enName": "11th Infantry Regiment",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N15", "time": 2 },
+      { "target": "N17", "time": 2 }
+    ]
+  },
+  {
+    "id": "N17",
+    "thName": "วัดพระศรีมหาธาตุ",
+    "enName": "Wat Phra Sri Mahathat",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N16", "time": 2 },
+      { "target": "N18", "time": 2 }
+    ]
+  },
+  {
+    "id": "N18",
+    "thName": "พหลโยธิน 59",
+    "enName": "Phahon Yothin 59",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N17", "time": 2 },
+      { "target": "N19", "time": 1 }
+    ]
+  },
+  {
+    "id": "N19",
+    "thName": "สายหยุด",
+    "enName": "Sai Yud",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N18", "time": 1 },
+      { "target": "N20", "time": 2 }
+    ]
+  },
+  {
+    "id": "N20",
+    "thName": "สะพานใหม่",
+    "enName": "Saphan Mai",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N19", "time": 2 },
+      { "target": "N21", "time": 2 }
+    ]
+  },
+  {
+    "id": "N21",
+    "thName": "โรงพยาบาลภูมิพลอดุลยเดช",
+    "enName": "Bhumibol Adulyadej Hospital",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N20", "time": 2 },
+      { "target": "N22", "time": 2 }
+    ]
+  },
+  {
+    "id": "N22",
+    "thName": "พิพิธภัณฑ์กองทัพอากาศ",
+    "enName": "Royal Thai Air Force Museum",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N21", "time": 2 },
+      { "target": "N23", "time": 1 }
+    ]
+  },
+  {
+    "id": "N23",
+    "thName": "แยก คปอ.",
+    "enName": "Yaek Kor Por Aor",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "N22", "time": 1 },
+      { "target": "N24", "time": 3 }
+    ]
+  },
+  {
+    "id": "N24",
+    "thName": "คูคต",
+    "enName": "Khu Khot",
+    "line": "btsSukhumvitExt",
+    "connections": [{ "target": "N23", "time": 3 }]
+  },
+  {
+    "id": "E1",
+    "thName": "ชิดลม",
+    "enName": "Chit Lom",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "CEN_Sukhumvit", "time": 2 },
+      { "target": "E2", "time": 2 }
+    ]
+  },
+  {
+    "id": "E2",
+    "thName": "เพลินจิต",
+    "enName": "Phloen Chit",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E1", "time": 2 },
+      { "target": "E3", "time": 2 }
+    ]
+  },
+  {
+    "id": "E3",
+    "thName": "นานา",
+    "enName": "Nana",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E2", "time": 2 },
+      { "target": "E4", "time": 2 }
+    ]
+  },
+  {
+    "id": "E4",
+    "thName": "อโศก",
+    "enName": "Asok",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E3", "time": 2 },
+      { "target": "E5", "time": 2 },
+      {
+        "target": "BL22",
+        "time": 4,
+        "isTransfer": true,
+        "isCrossOp": true
+      }
+    ]
+  },
+  {
+    "id": "E5",
+    "thName": "พร้อมพงษ์",
+    "enName": "Phrom Phong",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E4", "time": 2 },
+      { "target": "E6", "time": 2 }
+    ]
+  },
+  {
+    "id": "E6",
+    "thName": "ทองหล่อ",
+    "enName": "Thong Lo",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E5", "time": 2 },
+      { "target": "E7", "time": 2 }
+    ]
+  },
+  {
+    "id": "E7",
+    "thName": "เอกมัย",
+    "enName": "Ekkamai",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E6", "time": 2 },
+      { "target": "E8", "time": 2 }
+    ]
+  },
+  {
+    "id": "E8",
+    "thName": "พระโขนง",
+    "enName": "Phra Khanong",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E7", "time": 2 },
+      { "target": "E9", "time": 2 }
+    ]
+  },
+  {
+    "id": "E9",
+    "thName": "อ่อนนุช",
+    "enName": "On Nut",
+    "line": "btsSukhumvit",
+    "connections": [
+      { "target": "E8", "time": 2 },
+      { "target": "E10", "time": 2 }
+    ]
+  },
+  {
+    "id": "E10",
+    "thName": "บางจาก",
+    "enName": "Bang Chak",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E9", "time": 2 },
+      { "target": "E11", "time": 1 }
+    ]
+  },
+  {
+    "id": "E11",
+    "thName": "ปุณณวิถี",
+    "enName": "Punnawithi",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E10", "time": 1 },
+      { "target": "E12", "time": 2 }
+    ]
+  },
+  {
+    "id": "E12",
+    "thName": "อุดมสุข",
+    "enName": "Udom Suk",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E11", "time": 2 },
+      { "target": "E13", "time": 2 }
+    ]
+  },
+  {
+    "id": "E13",
+    "thName": "บางนา",
+    "enName": "Bang Na",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E12", "time": 2 },
+      { "target": "E14", "time": 2 }
+    ]
+  },
+  {
+    "id": "E14",
+    "thName": "แบริ่ง",
+    "enName": "Bearing",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E13", "time": 2 },
+      { "target": "E15", "time": 3 }
+    ]
+  },
+  {
+    "id": "E15",
+    "thName": "สำโรง",
+    "enName": "Samrong",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E14", "time": 3 },
+      { "target": "E16", "time": 1 }
+    ]
+  },
+  {
+    "id": "E16",
+    "thName": "ปู่เจ้า",
+    "enName": "Pu Chao",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E15", "time": 1 },
+      { "target": "E17", "time": 3 }
+    ]
+  },
+  {
+    "id": "E17",
+    "thName": "ช้างเอราวัณ",
+    "enName": "Chang Erawan",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E16", "time": 3 },
+      { "target": "E18", "time": 3 }
+    ]
+  },
+  {
+    "id": "E18",
+    "thName": "โรงเรียนนายเรือ",
+    "enName": "Royal Thai Naval Academy",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E17", "time": 3 },
+      { "target": "E19", "time": 1 }
+    ]
+  },
+  {
+    "id": "E19",
+    "thName": "ปากน้ำ",
+    "enName": "Pak Nam",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E18", "time": 1 },
+      { "target": "E20", "time": 3 }
+    ]
+  },
+  {
+    "id": "E20",
+    "thName": "ศรีนครินทร์",
+    "enName": "Srinagarindra",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E19", "time": 3 },
+      { "target": "E21", "time": 2 }
+    ]
+  },
+  {
+    "id": "E21",
+    "thName": "แพรกษา",
+    "enName": "Phraek Sa",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E20", "time": 2 },
+      { "target": "E22", "time": 2 }
+    ]
+  },
+  {
+    "id": "E22",
+    "thName": "สายลวด",
+    "enName": "Sai Luat",
+    "line": "btsSukhumvitExt",
+    "connections": [
+      { "target": "E21", "time": 2 },
+      { "target": "E23", "time": 2 }
+    ]
+  },
+  {
+    "id": "E23",
+    "thName": "เคหะฯ",
+    "enName": "Kheha",
+    "line": "btsSukhumvitExt",
+    "connections": [{ "target": "E22", "time": 2 }]
+  }
+]

@@ -1,0 +1,61 @@
+[
+  {
+    "id": "RW01",
+    "thName": "กรุงเทพอภิวัฒน์",
+    "enName": "Krung Thep Aphiwat",
+    "line": "srtRW",
+    "connections": [
+      { "target": "RW02", "time": 4 },
+      { "target": "RN01", "time": 2, "isTransfer": true, "isCrossOp": false },
+      { "target": "BL11", "time": 2, "isTransfer": true, "isCrossOp": true }
+    ]
+  },
+  {
+    "id": "RW02",
+    "thName": "บางซ่อน",
+    "enName": "Bang Son",
+    "line": "srtRW",
+    "connections": [
+      { "target": "RW01", "time": 4 },
+      { "target": "RW03", "time": 2 },
+      { "target": "PP15", "time": 3, "isTransfer": true, "isCrossOp": true }
+    ]
+  },
+  {
+    "id": "RW03",
+    "thName": "สะพานพระราม 6",
+    "enName": "Rama VI Bridge",
+    "line": "srtRW",
+    "connections": [
+      { "target": "RW02", "time": 2 },
+      { "target": "RW04", "time": 2 }
+    ]
+  },
+  {
+    "id": "RW04",
+    "thName": "บางกรวย",
+    "enName": "Bang Kruai",
+    "line": "srtRW",
+    "connections": [
+      { "target": "RW03", "time": 2 },
+      { "target": "RW05", "time": 3 }
+    ]
+  },
+  {
+    "id": "RW05",
+    "thName": "บางบำหรุ",
+    "enName": "Bang Bamru",
+    "line": "srtRW",
+    "connections": [
+      { "target": "RW04", "time": 3 },
+      { "target": "RW06", "time": 5 }
+    ]
+  },
+  {
+    "id": "RW06",
+    "thName": "ตลิ่งชัน",
+    "enName": "Taling Chan",
+    "line": "srtRW",
+    "connections": [{ "target": "RW05", "time": 5 }]
+  }
+]
