@@ -3,24 +3,18 @@
     "id": "RN01",
     "thName": "กรุงเทพอภิวัฒน์",
     "enName": "Krung Thep Aphiwat",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN02", "time": 3 },
-      { "target": "RW01", "time": 2,
-        "isTransfer":true,
-        "isCrossOp":false
-      },
-      { "target": "BL11", "time": 2,
-        "isTransfer": true,
-        "isCrossOp":true
-      }
+      { "target": "RW01", "time": 2, "isTransfer": true, "isCrossOp": false },
+      { "target": "BL11", "time": 2, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {
     "id": "RN02",
     "thName": "จตุจักร",
     "enName": "Chatuchak",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN01", "time": 3 },
       { "target": "RN03", "time": 2 }
@@ -30,7 +24,7 @@
     "id": "RN03",
     "thName": "วัดเสมียนนารี",
     "enName": "Wat Samian Nari",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN02", "time": 2 },
       { "target": "RN04", "time": 2 }
@@ -40,7 +34,7 @@
     "id": "RN04",
     "thName": "บางเขน",
     "enName": "Bang Khen",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN03", "time": 2 },
       { "target": "RN05", "time": 2 }
@@ -50,7 +44,7 @@
     "id": "RN05",
     "thName": "ทุ่งสองห้อง",
     "enName": "Thung Song Hong",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN04", "time": 2 },
       { "target": "RN06", "time": 3 }
@@ -60,22 +54,17 @@
     "id": "RN06",
     "thName": "หลักสี่",
     "enName": "Lak Si",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN05", "time": 3 },
-      { "target": "RN07", "time": 2 },
-      { 
-        "target": "PK14", "time": 2,
-        "isTransfer":true,
-        "isCrossOp":true
-      }
+      { "target": "RN07", "time": 2 }
     ]
   },
   {
     "id": "RN07",
     "thName": "การเคหะ",
     "enName": "Kan Kheha",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN06", "time": 2 },
       { "target": "RN08", "time": 2 }
@@ -85,7 +74,7 @@
     "id": "RN08",
     "thName": "ดอนเมือง",
     "enName": "Don Mueang",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN07", "time": 2 },
       { "target": "RN09", "time": 4 }
@@ -95,7 +84,7 @@
     "id": "RN09",
     "thName": "หลักหก",
     "enName": "Lak Hok",
-    "line": "srtN",
+    "line": "srtRN",
     "connections": [
       { "target": "RN08", "time": 4 },
       { "target": "RN10", "time": 3 }
@@ -105,9 +94,7 @@
     "id": "RN10",
     "thName": "รังสิต",
     "enName": "Rangsit",
-    "line": "srtN",
-    "connections": [
-      { "target": "RN09", "time": 3 }
-    ]
+    "line": "srtRN",
+    "connections": [{ "target": "RN09", "time": 3 }]
   }
 ]

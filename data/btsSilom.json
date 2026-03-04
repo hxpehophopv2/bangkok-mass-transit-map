@@ -39,7 +39,8 @@
     "line": "btsSilom",
     "connections": [
       { "target": "S1", "time": 3 },
-      { "target": "S3", "time": 2 }
+      { "target": "S3", "time": 2 },
+      { "target": "BL26", "time": 4, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {
@@ -77,6 +78,69 @@
     "thName": "สะพานตากสิน",
     "enName": "Saphan Taksin",
     "line": "btsSilom",
-    "connections": [{ "target": "S5", "time": 2 }]
+    "connections": [
+      { "target": "S5", "time": 2 },
+      { "target": "S7", "time": 3 }
+    ]
+  },
+  {
+    "id": "S7",
+    "thName": "กรุงธนบุรี",
+    "enName": "Krung Thonburi",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "S6", "time": 3 },
+      { "target": "S8", "time": 1 }
+    ]
+  },
+  {
+    "id": "S8",
+    "thName": "วงเวียนใหญ่",
+    "enName": "Wongwian Yai",
+    "line": "btsSilom",
+    "connections": [
+      { "target": "S7", "time": 1 },
+      { "target": "S9", "time": 2 }
+    ]
+  },
+  {
+    "id": "S9",
+    "thName": "โพธิ์นิมิตร",
+    "enName": "Pho Nimit",
+    "line": "btsSilomExt",
+    "connections": [
+      { "target": "S8", "time": 2 },
+      { "target": "S10", "time": 2 }
+    ]
+  },
+  {
+    "id": "S10",
+    "thName": "ตลาดพลู",
+    "enName": "Talat Phlu",
+    "line": "btsSilomExt",
+    "connections": [
+      { "target": "S9", "time": 2 },
+      { "target": "S11", "time": 2 }
+    ]
+  },
+  {
+    "id": "S11",
+    "thName": "วุฒากาศ",
+    "enName": "Wutthakat",
+    "line": "btsSilomExt",
+    "connections": [
+      { "target": "S10", "time": 2 },
+      { "target": "S12", "time": 2 }
+    ]
+  },
+  {
+    "id": "S12",
+    "thName": "บางหว้า",
+    "enName": "Bang Wa",
+    "line": "btsSilomExt",
+    "connections": [
+      { "target": "S11", "time": 2 },
+      { "target": "BL34", "time": 2, "isTransfer": true, "isCrossOp": true }
+    ]
   }
 ]

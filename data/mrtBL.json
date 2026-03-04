@@ -3,7 +3,7 @@
     "id": "BL01_U",
     "thName": "ท่าพระ",
     "enName": "Tha Phra",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL02", "time": 2 },
       { "target": "BL01_L", "time": 1, "isTransfer": true, "isCrossOp": false }
@@ -13,7 +13,7 @@
     "id": "BL02",
     "thName": "จรัญฯ 13",
     "enName": "Charan 13",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL01_U", "time": 2 },
       { "target": "BL03", "time": 2 }
@@ -23,7 +23,7 @@
     "id": "BL03",
     "thName": "ไฟฉาย",
     "enName": "Fai Chai",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL02", "time": 2 },
       { "target": "BL04", "time": 2 }
@@ -33,7 +33,7 @@
     "id": "BL04",
     "thName": "บางขุนนนท์",
     "enName": "Bang Khun Non",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL03", "time": 2 },
       { "target": "BL05", "time": 3 }
@@ -43,7 +43,7 @@
     "id": "BL05",
     "thName": "บางยี่ขัน",
     "enName": "Bang Yi Khan",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL04", "time": 3 },
       { "target": "BL06", "time": 2 }
@@ -53,7 +53,7 @@
     "id": "BL06",
     "thName": "สิรินธร",
     "enName": "Sirindhorn",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL05", "time": 2 },
       { "target": "BL07", "time": 2 }
@@ -63,7 +63,7 @@
     "id": "BL07",
     "thName": "บางพลัด",
     "enName": "Bang Phlat",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL06", "time": 2 },
       { "target": "BL08", "time": 2 }
@@ -73,7 +73,7 @@
     "id": "BL08",
     "thName": "บางอ้อ",
     "enName": "Bang O",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL07", "time": 2 },
       { "target": "BL09", "time": 2 }
@@ -83,7 +83,7 @@
     "id": "BL09",
     "thName": "บางโพ",
     "enName": "Bang Pho",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL08", "time": 2 },
       { "target": "BL10", "time": 2 }
@@ -93,7 +93,7 @@
     "id": "BL10",
     "thName": "เตาปูน",
     "enName": "Tao Poon",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL09", "time": 2 },
       { "target": "BL11", "time": 2 },
@@ -104,7 +104,7 @@
     "id": "BL11",
     "thName": "บางซื่อ",
     "enName": "Bang Sue",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL10", "time": 2 },
       { "target": "BL12", "time": 2 },
@@ -116,7 +116,7 @@
     "id": "BL12",
     "thName": "กำแพงเพชร",
     "enName": "Kamphaeng Phet",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL11", "time": 2 },
       { "target": "BL13", "time": 2 }
@@ -126,17 +126,18 @@
     "id": "BL13",
     "thName": "สวนจตุจักร",
     "enName": "Chatuchak Park",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL12", "time": 2 },
-      { "target": "BL14", "time": 3 }
+      { "target": "BL14", "time": 3 },
+      { "target": "N8", "time": 3, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {
     "id": "BL14",
     "thName": "พหลโยธิน",
     "enName": "Phahon Yothin",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL13", "time": 3 },
       { "target": "BL15", "time": 2 }
@@ -146,7 +147,7 @@
     "id": "BL15",
     "thName": "ลาดพร้าว",
     "enName": "Lat Phrao",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL14", "time": 2 },
       { "target": "BL16", "time": 2 }
@@ -156,7 +157,7 @@
     "id": "BL16",
     "thName": "รัชดาภิเษก",
     "enName": "Ratchadaphisek",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL15", "time": 2 },
       { "target": "BL17", "time": 2 }
@@ -166,7 +167,7 @@
     "id": "BL17",
     "thName": "สุทธิสาร",
     "enName": "Sutthisan",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL16", "time": 2 },
       { "target": "BL18", "time": 2 }
@@ -176,7 +177,7 @@
     "id": "BL18",
     "thName": "ห้วยขวาง",
     "enName": "Huai Kwang",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL17", "time": 2 },
       { "target": "BL19", "time": 2 }
@@ -186,7 +187,7 @@
     "id": "BL19",
     "thName": "ศุนย์วัฒนธรรมแห่งประเทศไทย",
     "enName": "Thailand Cultural Centre",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL18", "time": 2 },
       { "target": "BL20", "time": 3 }
@@ -196,7 +197,7 @@
     "id": "BL20",
     "thName": "พระราม 9",
     "enName": "Phra Ram 9",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL19", "time": 3 },
       { "target": "BL21", "time": 1 }
@@ -206,17 +207,18 @@
     "id": "BL21",
     "thName": "เพชรบุรี",
     "enName": "Phetchaburi",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL20", "time": 1 },
-      { "target": "BL22", "time": 2 }
+      { "target": "BL22", "time": 2 },
+      { "target": "A6", "time": 3, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {
     "id": "BL22",
     "thName": "สุขุมวิท",
     "enName": "Sukhumvit",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL21", "time": 2 },
       { "target": "BL23", "time": 3 },
@@ -227,7 +229,7 @@
     "id": "BL23",
     "thName": "ศูนย์การประชุมแห่งชาติสิริกิติ์",
     "enName": "Queen Sirikit National Convention Centre",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL22", "time": 3 },
       { "target": "BL24", "time": 2 }
@@ -237,7 +239,7 @@
     "id": "BL24",
     "thName": "คลองเตย",
     "enName": "Khlong Toei",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL23", "time": 2 },
       { "target": "BL25", "time": 2 }
@@ -247,7 +249,7 @@
     "id": "BL25",
     "thName": "ลุมพินี",
     "enName": "Lumphini",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL24", "time": 2 },
       { "target": "BL26", "time": 1 }
@@ -257,7 +259,7 @@
     "id": "BL26",
     "thName": "สีลม",
     "enName": "Si Lom",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL25", "time": 1 },
       { "target": "BL27", "time": 2 },
@@ -268,7 +270,7 @@
     "id": "BL27",
     "thName": "สามย่าน",
     "enName": "Sam Yan",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL26", "time": 2 },
       { "target": "BL28", "time": 2 }
@@ -278,7 +280,7 @@
     "id": "BL28",
     "thName": "หัวลำโพง",
     "enName": "Hua Lamphong",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL27", "time": 2 },
       { "target": "BL29", "time": 2 }
@@ -288,7 +290,7 @@
     "id": "BL29",
     "thName": "วัดมังกร",
     "enName": "Wat Mangkon",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL28", "time": 2 },
       { "target": "BL30", "time": 2 }
@@ -298,7 +300,7 @@
     "id": "BL30",
     "thName": "สามยอด",
     "enName": "Sam Yot",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL29", "time": 2 },
       { "target": "BL31", "time": 2 }
@@ -308,7 +310,7 @@
     "id": "BL31",
     "thName": "สนามไชย",
     "enName": "Sanam Chai",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL30", "time": 2 },
       { "target": "BL32", "time": 2 }
@@ -318,7 +320,7 @@
     "id": "BL32",
     "thName": "อิสรภาพ",
     "enName": "Itsaraphap",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL31", "time": 2 },
       { "target": "BL01_L", "time": 3 }
@@ -328,7 +330,7 @@
     "id": "BL01_L",
     "thName": "ท่าพระ",
     "enName": "Tha Phra",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL32", "time": 3 },
       { "target": "BL33", "time": 1 },
@@ -339,7 +341,7 @@
     "id": "BL33",
     "thName": "บางไผ่",
     "enName": "Bang Phai",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL01_L", "time": 1 },
       { "target": "BL34", "time": 2 }
@@ -349,7 +351,7 @@
     "id": "BL34",
     "thName": "บางหว้า",
     "enName": "Bang Wa",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL33", "time": 2 },
       { "target": "BL35", "time": 2 },
@@ -360,7 +362,7 @@
     "id": "BL35",
     "thName": "เพชรเกษม 48",
     "enName": "Phetkasem 48",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL34", "time": 2 },
       { "target": "BL36", "time": 2 }
@@ -370,7 +372,7 @@
     "id": "BL36",
     "thName": "ภาษีเจริญ",
     "enName": "Phasi Charoen",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL35", "time": 2 },
       { "target": "BL37", "time": 2 }
@@ -380,7 +382,7 @@
     "id": "BL37",
     "thName": "บางแค",
     "enName": "Bang Khae",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [
       { "target": "BL36", "time": 2 },
       { "target": "BL38", "time": 2 }
@@ -390,7 +392,7 @@
     "id": "BL38",
     "thName": "หลักสอง",
     "enName": "Lak Song",
-    "line": "mrtBlue",
+    "line": "mrtBL",
     "connections": [{ "target": "BL37", "time": 2 }]
   }
 ]
