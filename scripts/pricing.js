@@ -1,30 +1,21 @@
-import fs from "fs";
-
-// ====================================================================================================
-
-const rawPPFare = fs.readFileSync(
-  new URL("../data/fareMatrices/mrtPPFare.json", import.meta.url),
-);
-const purpleFareMatrix = JSON.parse(rawPPFare);
-// A simplified fare table using your array index logic!
-// Index 0 = 0 hops (same station), Index 1 = 1 hop, Index 2 = 2 hops, etc.
-
-const rawRedFare = fs.readFileSync(
-  new URL("../data/fareMatrices/srtRFare.json", import.meta.url),
-);
-const redFareMatrix = JSON.parse(rawRedFare);
-
 const fareTables = {
   BTS: [17, 17, 21, 25, 28, 31, 34, 37, 40, 43, 47], // Core line caps at 47
   BTS_EXT: [17, 17, 19, 22, 24, 27, 29, 32, 34, 37, 39, 42, 44, 45],
   BEM: [17, 17, 20, 22, 25, 27, 30, 32, 35, 37, 40, 42, 45], // MRT Blue Line
   "Asia Era One": [15, 15, 20, 25, 30, 35, 40, 45],
-  BTS_GOLD: [16]
+  BTS_G: [16],
 };
 
 // ====================================================================================================
 
-export function calculateTotalFare(pathIds, transitGraph) {
+export function calculateTotalFare(
+  pathIds,
+  transitGraph,
+  PPMatrix,
+  RMatrix,
+  PKMatrix,
+  YLMatrix,
+) {
   if (!pathIds || pathIds.length === 0) return 0;
 
   let netCost = 0;
@@ -64,12 +55,20 @@ export function calculateTotalFare(pathIds, transitGraph) {
       if (currentOperator === "mrtPP") {
         let startStation = currentSegment[0];
         let endStation = currentSegment[currentSegment.length - 1];
-        segmentPrice = purpleFareMatrix[startStation][endStation];
+        segmentPrice = PPMatrix[startStation][endStation];
       } else if (currentOperator === "SRT") {
         // NEW SRT LOGIC!
         let startStation = currentSegment[0];
         let endStation = currentSegment[currentSegment.length - 1];
-        segmentPrice = redFareMatrix[startStation][endStation];
+        segmentPrice = RMatrix[startStation][endStation];
+      } else if (currentOperator === "NBM") {
+        let startStation = currentSegment[0];
+        let endStation = currentSegment[currentSegment.length - 1];
+        segmentPrice = PKMatrix[startStation][endStation];
+      } else if (currentOperator === "EBM") {
+        let startStation = currentSegment[0];
+        let endStation = currentSegment[currentSegment.length - 1];
+        segmentPrice = YLMatrix[startStation][endStation];
       } else {
         // Classic 1D Hop-Counting for BTS, BTS_EXT, and MRT Blue
         let hops = getBillableHops(currentSegment);
@@ -102,12 +101,19 @@ export function calculateTotalFare(pathIds, transitGraph) {
   if (currentOperator === "mrtPP") {
     let startStation = currentSegment[0];
     let endStation = currentSegment[currentSegment.length - 1];
-    finalSegmentPrice = purpleFareMatrix[startStation][endStation];
+    finalSegmentPrice = PPMatrix[startStation][endStation];
   } else if (currentOperator === "SRT") {
-    // NEW SRT LOGIC!
     let startStation = currentSegment[0];
     let endStation = currentSegment[currentSegment.length - 1];
-    finalSegmentPrice = redFareMatrix[startStation][endStation];
+    finalSegmentPrice = RMatrix[startStation][endStation];
+  } else if (currentOperator === "NBM") {
+    let startStation = currentSegment[0];
+    let endStation = currentSegment[currentSegment.length - 1];
+    finalSegmentPrice = PKMatrix[startStation][endStation];
+  } else if (currentOperator === "EBM") {
+    let startStation = currentSegment[0];
+    let endStation = currentSegment[currentSegment.length - 1];
+    finalSegmentPrice = YLMatrix[startStation][endStation];
   } else {
     let finalHops = getBillableHops(currentSegment);
     finalSegmentPrice =

@@ -57,7 +57,8 @@
     "line": "srtRN",
     "connections": [
       { "target": "RN05", "time": 3 },
-      { "target": "RN07", "time": 2 }
+      { "target": "RN07", "time": 2 },
+      { "target": "PK14", "time": 6, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {

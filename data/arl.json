@@ -33,7 +33,8 @@
     "line": "arl",
     "connections": [
       { "target": "A3", "time": 4 },
-      { "target": "A5", "time": 4 }
+      { "target": "A5", "time": 4 },
+      { "target": "YL11", "time": 4, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {

@@ -5,5 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <input
+      type="text"
+      id="originInput"
+      list="originStations"
+      placeholder="Origin"
+    />
+    <datalist id="originStations"></datalist>
+    <input
+      type="text"
+      id="destInput"
+      list="destStations"
+      placeholder="Destination"
+    />
+    <datalist id="destStations"></datalist>
+    <button id="searchBtn">Search</button>
+    <p id="output"></p>
+
+    <script src="./scripts/app.js" type="module"></script>
+  </body>
 </html>

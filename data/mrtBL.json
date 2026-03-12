@@ -150,7 +150,8 @@
     "line": "mrtBL",
     "connections": [
       { "target": "BL14", "time": 2 },
-      { "target": "BL16", "time": 2 }
+      { "target": "BL16", "time": 2 },
+      { "target": "YL01", "time": 4, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {

@@ -103,7 +103,8 @@
     "line": "mrtPP",
     "connections": [
       { "target": "PP10", "time": 2 },
-      { "target": "PP12", "time": 4 }
+      { "target": "PP12", "time": 4 },
+      { "target": "PK01", "time": 5, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {

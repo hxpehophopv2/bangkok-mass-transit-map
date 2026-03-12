@@ -190,7 +190,8 @@
     "line": "btsSukhumvitExt",
     "connections": [
       { "target": "N16", "time": 2 },
-      { "target": "N18", "time": 2 }
+      { "target": "N18", "time": 2 },
+      { "target": "PK16", "time": 4, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {
@@ -413,7 +414,8 @@
     "line": "btsSukhumvitExt",
     "connections": [
       { "target": "E14", "time": 3 },
-      { "target": "E16", "time": 1 }
+      { "target": "E16", "time": 1 },
+      { "target": "YL23", "time": 4, "isTransfer": true, "isCrossOp": true }
     ]
   },
   {
