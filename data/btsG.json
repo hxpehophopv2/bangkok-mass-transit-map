@@ -1,0 +1,31 @@
+[
+    {
+    "id": "G1",
+    "thName": "กรุงธนบุรี",
+    "enName": "Krung Thon Buri",
+    "line": "btsG",
+    "connections": [
+      { "target": "S7", "time": 3 ,"isTransfer":true, "isCrossOp":true},
+      { "target": "G2", "time": 4 }
+    ]
+  },
+  {
+    "id": "G2",
+    "thName": "เจริญนคร",
+    "enName": "Charoen Nakhon",
+    "line": "btsG",
+    "connections": [
+      { "target": "G1", "time": 4 },
+      { "target": "G3", "time": 2 }
+    ]
+  },
+  {
+    "id": "G3",
+    "thName": "คลองสาน",
+    "enName": "Khlong San",
+    "line": "btsG",
+    "connections": [
+      { "target": "G2", "time": 2 }
+    ]
+  }
+]

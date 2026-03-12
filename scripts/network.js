@@ -63,6 +63,7 @@ const lines = {
   mrtPP: new Line("Purple", "Chalong Ratchatham", "#800080", "mrtPP"),
   srtRN: new Line("Dark Red", "Dark Red", "#761212", "SRT"),
   srtRW: new Line("Light Red", "Light Red", "#b14444", "SRT"),
+  btsG: new Line("Gold", "Gold", "#867e12", "btsG"),
 };
 
 // --- PASS 1: Build the dots (Stations) ---
