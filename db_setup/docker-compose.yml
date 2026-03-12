@@ -1,0 +1,14 @@
+# docker-compose.yml
+version: "3.8"
+services:
+  database:
+    image: postgres:16
+    container_name: bkk_transit_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: through_metro
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql

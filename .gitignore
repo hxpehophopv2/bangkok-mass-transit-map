@@ -1,0 +1,17 @@
+# --- SECRETS & CREDENTIALS ---
+.env
+*.pem
+
+# --- NODE.JS ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# --- OS JUNKS ---
+.DS_Store
+Thumbs.db
+
+# --- LOCAL DATABASE DATA ---
+pgdata/
+postgres-data/
