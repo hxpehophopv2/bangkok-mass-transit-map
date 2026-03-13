@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+  database:
+    image: postgres:17
+    container_name: through_metro_db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: through_metro
+    ports:
+      - "5432:5432"
+    volumes:
+      - ./db-setup/init.sql:/docker-entrypoint-initdb.d/init.sql
+      - ${DATA_DIRECTORY:-./postgres_data}:/var/lib/postgresql/data
