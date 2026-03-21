@@ -1,6 +1,6 @@
 [
   {
-    "id": "CEN_Sukhumvit",
+    "id": "CEN_SUK",
     "thName": "สยาม",
     "enName": "Siam",
     "line": "btsSukhumvit",
@@ -8,7 +8,7 @@
       { "target": "N1", "time": 2 },
       { "target": "E1", "time": 2 },
       {
-        "target": "CEN_Silom",
+        "target": "CEN_SIL",
         "time": 1,
         "isTransfer": true,
         "isCrossOp": false
@@ -21,7 +21,7 @@
     "enName": "Ratchathewi",
     "line": "btsSukhumvit",
     "connections": [
-      { "target": "CEN_Sukhumvit", "time": 2 },
+      { "target": "CEN_SUK", "time": 2 },
       { "target": "N2", "time": 2 }
     ]
   },
@@ -267,7 +267,7 @@
     "enName": "Chit Lom",
     "line": "btsSukhumvit",
     "connections": [
-      { "target": "CEN_Sukhumvit", "time": 2 },
+      { "target": "CEN_SUK", "time": 2 },
       { "target": "E2", "time": 2 }
     ]
   },

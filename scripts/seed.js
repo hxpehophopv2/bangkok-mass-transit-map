@@ -135,7 +135,7 @@ async function runSeed() {
 
     for (let conn of station.connections) {
       const insertConnSQL = `
-        INSERT INTO station_connection (source_station_id, target_station_id, travel_time_mins, is_transfer, is_cross_op)
+        INSERT INTO station_connection (source_station_id, target_station_id, travel_time_mins, is_transfer, is_cross_operator)
         VALUES ($1, $2, $3, $4, $5)
         ON CONFLICT (source_station_id, target_station_id) DO NOTHING;
       `;
@@ -153,6 +153,52 @@ async function runSeed() {
   }
 
   console.log("✅ Pass 2 Complete: All connections created!");
+
+  console.log("💸 Phase 3: Injecting Distance Fares...");
+
+  // 1. Read the massive JSON matrix
+  const mrtPKFareRaw = fs.readFileSync(
+    new URL("../data/fareMatrices/mrtPKFare.json", import.meta.url),
+  );
+  const mrtPPFareRaw = fs.readFileSync(
+    new URL("../data/fareMatrices/mrtPPFare.json", import.meta.url),
+  );
+  const mrtYLFareRaw = fs.readFileSync(
+    new URL("../data/fareMatrices/mrtYLFare.json", import.meta.url),
+  );
+  const srtRFareRaw = fs.readFileSync(
+    new URL("../data/fareMatrices/srtRFare.json", import.meta.url),
+  );
+  const mrtPKFare = JSON.parse(mrtPKFareRaw);
+  const mrtPPFare = JSON.parse(mrtPPFareRaw);
+  const mrtYLFare = JSON.parse(mrtYLFareRaw);
+  const srtRFare = JSON.parse(srtRFareRaw);
+  const distanceFares = {
+    ...mrtPKFare,
+    ...mrtPPFare,
+    ...mrtYLFare,
+    ...srtRFare,
+  };
+
+  // 2. The Double Loop
+  // The outer loop grabs the source station (e.g., "RW06")
+  for (const [sourceStation, targetList] of Object.entries(distanceFares)) {
+    // The inner loop grabs every target and fare for that specific source
+    for (const [targetStation, fareAmount] of Object.entries(targetList)) {
+      const insertFareSQL = `
+      INSERT INTO distance_fare (source_station_id, target_station_id, fare)
+      VALUES ($1, $2, $3)
+      ON CONFLICT (source_station_id, target_station_id) DO NOTHING;
+    `;
+
+      // Pass the exact variables to the query
+      const values = [sourceStation, targetStation, fareAmount];
+
+      await client.query(insertFareSQL, values);
+    }
+  }
+
+  console.log("✅ Distance fares locked and loaded!");
 
   await client.end();
   console.log("👋 Disconnected from database.");
