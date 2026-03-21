@@ -4,10 +4,10 @@
     "thName": "สนามกีฬาแห่งชาติ",
     "enName": "National Stadium",
     "line": "btsSilom",
-    "connections": [{ "target": "CEN_Silom", "time": 1 }]
+    "connections": [{ "target": "CEN_SIL", "time": 1 }]
   },
   {
-    "id": "CEN_Silom",
+    "id": "CEN_SIL",
     "thName": "สยาม",
     "enName": "Siam",
     "line": "btsSilom",
@@ -15,7 +15,7 @@
       { "target": "W1", "time": 1 },
       { "target": "S1", "time": 3 },
       {
-        "target": "CEN_Sukhumvit",
+        "target": "CEN_SUK",
         "time": 1,
         "isTransfer": true,
         "isCrossOp": false
@@ -28,7 +28,7 @@
     "enName": "Ratchadamri",
     "line": "btsSilom",
     "connections": [
-      { "target": "CEN_Silom", "time": 3 },
+      { "target": "CEN_SIL", "time": 3 },
       { "target": "S2", "time": 3 }
     ]
   },
