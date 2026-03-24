@@ -6,22 +6,30 @@
     <title>Document</title>
   </head>
   <body>
+    <label for="originInput">Origin:</label>
     <input
-      type="text"
-      id="originInput"
       list="originStations"
-      placeholder="Origin"
+      id="originInput"
+      placeholder="Type origin..."
     />
     <datalist id="originStations"></datalist>
+
+    <label for="destInput">Destination:</label>
     <input
-      type="text"
-      id="destInput"
       list="destStations"
-      placeholder="Destination"
+      id="destInput"
+      placeholder="Type destination..."
     />
     <datalist id="destStations"></datalist>
     <button id="searchBtn">Search</button>
+
+    <label class="switch">
+      <input type="checkbox" id="optimizeFor" />
+      <span class="slider round"></span>
+    </label>
+
     <p id="output"></p>
+    <ul id="outputPath"></ul>
 
     <script src="./scripts/app.js" type="module"></script>
   </body>
